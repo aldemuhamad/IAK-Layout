@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.aldemuhamad.iak.MainActivity">
+
+    <ImageView
+        android:id="@+id/steve"
+        android:src="@drawable/steve"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginBottom="10dp"
+        android:scaleType="fitCenter"/>
+    <TextView
+        android:id="@+id/mTextContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Steve Jobs"
+        android:layout_below="@+id/steve"
+        style="@style/title"
+        android:padding="10dp"/>
+
+    <ScrollView
+        android:id="@+id/ScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="158dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/mTextContent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Synth sartorial kinfolk selvage quinoa pabst, retro twee cray prism single-origin coffee intelligentsia. Beard snackwave trust fund, aesthetic copper mug bicycle rights cornhole pickled authentic pitchfork. Master cleanse prism kombucha squid chillwave pork belly, waistcoat kinfolk thundercats stumptown plaid flexitarian. Migas asymmetrical cliche squid, truffaut health goth gentrify post-ironic heirloom. Mustache whatever keytar poutine butcher. IPhone authentic taxidermy, helvetica mlkshk selvage photo booth church-key kogi street art blog activated charcoal truffaut. Snackwave austin chia, selvage helvetica green juice keffiyeh polaroid.
+Succulents unicorn street art jianbing blog, banh mi brunch franzen la croix vinyl green juice brooklyn. 8-bit flexitarian typewriter man braid tilde. Chambray flexitarian snackwave, chia tacos cardigan yr beard pitchfork health goth mumblecore truffaut master cleanse leggings. Schlitz chambray small batch, 3 wolf moon fingerstache portland gochujang butcher XOXO before they sold out ennui. Tumeric vegan hoodie, cred shabby chic raclette venmo woke. Microdosing pok pok distillery, ugh keytar raw denim crucifix vaporware glossier master cleanse migas kitsch biodiesel roof party pinterest. Air plant irony mustache beard, seitan cornhole banh mi vice twee tofu biodiesel vape cardigan butcher pork belly."/>
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/mTextShare"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:layout_below="@id/ScrollView"
+        android:text="Share"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:background="#2781be"
+        android:textColor="#fff"
+        />
+
+</RelativeLayout>
